@@ -6,10 +6,14 @@ import java.io.InputStreamReader;
 
 public class ITP1_1_B {
 
-	public static void main(String[] args) throws NumberFormatException, IOException {
+	public static void main(String[] args) {
 
-		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		int x = Integer.parseInt(in.readLine());
-		System.out.println(x * x * x);
+		try {
+			BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+			int x = Integer.parseInt(in.readLine());
+			System.out.println(x * x * x);
+		} catch (NumberFormatException | IOException e) {
+			// ignore
+		}
 	}
 }
