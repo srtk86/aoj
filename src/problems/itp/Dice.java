@@ -84,4 +84,37 @@ public class Dice {
     }
     return 0;
   }
+
+  public int t() {
+    return this.t;
+  }
+
+  public int n() {
+    return this.n;
+  }
+
+  public int e() {
+    return this.e;
+  }
+
+  public int w() {
+    return this.w;
+  }
+
+  public int s() {
+    return this.s;
+  }
+
+  public int b() {
+    return this.b;
+  }
+
+  public boolean equals(Dice dice) {
+    return this.t == dice.t()
+        && this.n == dice.n()
+        && this.e == dice.e()
+        && this.w == dice.w()
+        && this.s == dice.s()
+        && this.b == dice.b();
+  }
 }
